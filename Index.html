@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="assets/logo/favicon.png" width="50%" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body onload="Preloader()">
+
+    <!-- preloader section start  -->
+    <div id="preloader">
+        <div class="d-flex flex-column align-items-center">
+            <div class="loader"></div>
+            <div class="loader1 py-3"></div>
+        </div>
+    </div>
+    <!-- preloader section end  -->
+
+    <!-- navbar section start -->
+    <nav class="navbar navbar-expand-sm" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#" title="Logo">
+                <img class="logo" src="assets/logo/Logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon" id="toogler"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item underline">
+                        <a class="nav-link text-white text-center fw-bold" href="#">Home</a>
+                    </li>
+                    <li class="nav-item  underline">
+                        <a class="nav-link text-white text-center fw-bold" href="#About">About</a>
+                    </li>
+                    <li class="nav-item  underline">
+                        <a class="nav-link text-white text-center fw-bold" href="#skill">Skill</a>
+                    </li>
+                    <li class="nav-item  underline">
+                        <a class="nav-link text-white text-center fw-bold" href="#services">Service</a>
+                    </li>
+                    <li class="nav-item  underline">
+                        <a class="nav-link text-white text-center fw-bold" href="#project">Project</a>
+                    </li>
+                    <li class="nav-item  underline">
+                        <a class="nav-link text-white text-center fw-bold" href="#contact">Contact</a>
+                    </li>
+                    <li class="d-flex justify-content-center">
+                        <a href="#" class="nav-item" title="Theme">
+                            <img src="assets/theme/sun.png" class="img-fluid" id="icon" alt="theme">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar section end -->
+
+    <!-- hero section start  -->
+    <div class="container-fluid hero-section">
+        <div class="container">
+            <div class="row align-self-center">
+                <div class="col-12 col-sm-6 mt-5 align-self-center">
+                    <h4>Hello, <span class="greeting">I'm</span></h4>
+                    <h1 class="typing-effect" id="typing-element"></h1>
+                    <div class="mt-2">
+                        <!-- <a href="assets/resume/Kamesh_Raut_Resume.pdf" download class="text-center px-3 px-sm-4"
+                            title="Donwload Resume">Download CV</a> -->
+                            <a href="#" class="text-center px-3 px-sm-4" title="Donwload Resume">Download CV</a>
+                        <a href="#" class="text-center ms-2 px-3 px-sm-4" title="Hire Me">Hire Me</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 mt-5 mb-4 mb-md-5 gx-5 align-self-center">
+
+                    <!--?xml version="1.0" standalone="no"?-->
+                    <svg id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+                                <stop id="stop1" stop-color="rgba(248, 117, 55, 1)" offset="0%"></stop>
+                                <stop id="stop2" stop-color="rgba(251, 168, 31, 1)" offset="100%"></stop>
+                            </linearGradient>
+                        </defs>
+                        <mask id="mask1" mask-type="alpha">
+                            <path fill="url(#sw-gradient)"
+                                d="M19.8,-33.8C26.7,-30.3,34.1,-27.1,38.2,-21.5C42.4,-16,43.3,-8,42,-0.7C40.7,6.5,37.3,13,32.8,17.9C28.2,22.8,22.6,26.1,17,29.8C11.3,33.4,5.7,37.4,-0.1,37.6C-5.9,37.9,-11.9,34.4,-16.9,30.4C-21.9,26.4,-26,21.9,-29.3,16.7C-32.6,11.6,-35.1,5.8,-35.3,-0.1C-35.4,-6,-33.2,-11.9,-30.7,-18.4C-28.2,-25,-25.4,-32,-20.2,-36.6C-15,-41.1,-7.5,-43.2,-0.5,-42.2C6.4,-41.3,12.9,-37.3,19.8,-33.8Z"
+                                width="100%" height="100%" transform="translate(50 50)" stroke-width="0"
+                                style="transition: all 0.3s ease 0s;"></path>
+                        </mask>
+                        <g mask="url(#mask1)">
+                            <path fill="url(#sw-gradient)"
+                                d="M19.8,-33.8C26.7,-30.3,34.1,-27.1,38.2,-21.5C42.4,-16,43.3,-8,42,-0.7C40.7,6.5,37.3,13,32.8,17.9C28.2,22.8,22.6,26.1,17,29.8C11.3,33.4,5.7,37.4,-0.1,37.6C-5.9,37.9,-11.9,34.4,-16.9,30.4C-21.9,26.4,-26,21.9,-29.3,16.7C-32.6,11.6,-35.1,5.8,-35.3,-0.1C-35.4,-6,-33.2,-11.9,-30.7,-18.4C-28.2,-25,-25.4,-32,-20.2,-36.6C-15,-41.1,-7.5,-43.2,-0.5,-42.2C6.4,-41.3,12.9,-37.3,19.8,-33.8Z"
+                                width="100%" height="100%" transform="translate(50 50)" stroke-width="0"
+                                style="transition: all 0.3s ease 0s;"></path>
+                            <image class="img-fluid img" x="10" y="6" href="assets/pictures/kamesh.png"></image>
+                            <!-- <img src="assets/pictures/kamesh.png" class="img-fluid" alt="profile photo"> -->
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- hero section end  -->
+
+    <hr class="m-0">
+
+    <!-- About section start  -->
+    <div class="container-fluid" id="About">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center mt-5 mb-0">Who I'm</p>
+                    <div class="text-center">
+                        <h1>About Me</h1>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 align-self-center py-4">
+                    <img src="assets/pictures/IMG_20220928_145348.jpg" class="img-thumbnail" alt="">
+                </div>
+                <div class="col-0 col-md-2"></div>
+                <div class="col-12 col-sm-6 col-md-6 align-self-center mt-5 mb-5" data-aos="zoom-in">
+                    <h2 class="name text-center">Kamesh Raut</h2>
+                    <p>Hii Everyone, My name is Kamesh Raut. I am currently doing my B.Tech from AITRC Chhindwara with
+                        Computer
+                        Science.
+                        I have complete my 10th in 2019 with score 92.6% and complete my 12th in 2021 with score 93.6%.
+                        I have good exposure <span>C, C++, HTML, CSS, JavaScript and Java</span> and having good
+                        knowledge of
+                        <span>DSA, OOPS, Operating System.</span>
+                        My hobby is playing Cricket.
+                    </p>
+                    <div class="text-center social-media-icon">
+                        <a href="https://www.linkedin.com/in/kamesh-raut-0521b029a/" target="_blank" title="Linkedin">
+                            <i class="fa-brands fa-linkedin-in me-2"></i>
+                        </a>
+                        <a href="https://www.instagram.com/kamesh_raut92?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                            target="_blank" title="Instagram">
+                            <i class="fab fa-instagram me-2"></i>
+                        </a>
+                        <a href="https://twitter.com/kameshraut92" target="_blank" title="Twitter">
+                            <i class="fab fa-twitter me-2"></i>
+                        </a>
+                        <a href="https://github.com/kameshraut" target="_blank" title="Github">
+                            <i class="fab fa-github me-2"></i>
+                        </a>
+                        <a href="https://www.facebook.com/kamesh.raut.370" target="_blank" title="Facebook">
+                            <i class="fab fa-facebook me-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About section end  -->
+
+    <hr class="m-0">
+
+    <!-- skills section start  -->
+    <div class="container-fluid" id="skill">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 skill-head">
+                    <p class="text-center mt-5 mb-0">Skill's</p>
+                    <div class="text-center">
+                        <h1>Why Choose Me</h1>
+                    </div>
+                </div>
+                <div class="row my-5 align-self-center">
+                    <div class="col-12 col-md-6 ps-5" data-aos="fade-right">
+                        <div class="skills">
+                            <h2 class="text-center">Programming Languages</h2>
+                            <p class="text-center">C</p>
+                            <p class="text-center">C++</p>
+                            <p class="text-center">JAVA</p>
+                            <p class="text-center">JavaScript</p>
+                            <p class="text-center">PHP</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 ps-5" data-aos="fade-left">
+                        <div class="skills">
+                            <h2 class="text-center">Web Development</h2>
+                            <p class="text-center">HTML5</p>
+                            <p class="text-center">CSS</p>
+                            <p class="text-center">JavaScript</p>
+                            <p class="text-center">Bootstrap</p>
+                            <p class="text-center">MySql</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 ps-5" data-aos="fade-right">
+                        <div class="skills">
+                            <h2 class="text-center">Technical Skills</h2>
+                            <p class="text-center">Data Structure</p>
+                            <p class="text-center">Operating System</p>
+                            <p class="text-center">Database Management</p>
+                            <p class="text-center">Git & Github</p>
+                            <p class="text-center">OOP's</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 ps-5" data-aos="fade-left">
+                        <div class="skills">
+                            <h2 class="text-center">Design Skills</h2>
+                            <p class="text-center">Web Design</p>
+                            <p class="text-center">UI/UX Design</p>
+                            <p class="text-center">Canva</p>
+                            <p class="text-center">Figma</p>
+                            <p class="text-center">Adobe Photoshop</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- skills section end  -->
+
+    <hr class="m-0">
+
+    <!-- service section start  -->
+    <div class="container-fluid" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center mt-5 mb-0">Service</p>
+                    <div class="text-center">
+                        <h1>What I Do</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-5">
+                <div class="col-12 col-sm-3 my-3" data-aos="fade-down">
+                    <div class="service-card text-center">
+                        <img src="assets/bg-img/web-development.png" class="img-fluid my-4" alt="web-development">
+                        <h5>Web Development</h5>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3 my-3" data-aos="fade-down">
+                    <div class="service-card text-center">
+                        <img src="assets/bg-img/web-design.png" class="img-fluid my-4" alt="web-development">
+                        <h5>Web Design</h5>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3 my-3" data-aos="fade-down">
+                    <div class="service-card text-center">
+                        <img src="assets/bg-img/ui-ux.png" class="img-fluid my-4" alt="web-development">
+                        <h5>UI/UX Design</h5>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3 my-3" data-aos="fade-down">
+                    <div class="service-card text-center">
+                        <img src="assets/bg-img/video-photo.png" class="img-fluid my-4" alt="web-development">
+                        <h5>Video & Photo Editing</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- service section end  -->
+
+    <hr class="m-0">
+
+    <!-- Project section start  -->
+    <div class="container-fluid" id="project">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center mt-5 mb-0">Wha I Made</p>
+                    <div class="text-center">
+                        <h1>Projects</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-5">
+                <div class="col-12 col-sm-6 col-lg-4 py-2">
+                    <div class="project">
+                        <div>
+                            <a href="assets/portfolio-images/home_interior.png" title="Click here to view">
+                                <img src="assets/portfolio-images/home_interior.png" class="img-fluid"
+                                    alt="Poject-image">
+                            </a>
+                        </div>
+                        <div class="text-center bg-black">
+                            <p class="m-0 py-1" style="color:white">Home Interior</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 py-2">
+                    <div class="project">
+                        <div>
+                            <a href="assets/portfolio-images/food.png" title="Click here to view">
+                                <img src="assets/portfolio-images/food.png" class="img-fluid" alt="Poject-image">
+                            </a>
+                        </div>
+                        <div class="text-center bg-black">
+                            <p class="m-0 py-1" style="color:white">Food Website</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 py-2">
+                    <div class="project">
+                        <div>
+                            <a href="assets/portfolio-images/instagram.png" title="Click here to view">
+                                <img src="assets/portfolio-images/instagram.png" class="img-fluid" alt="Poject-image">
+                            </a>
+                        </div>
+                        <div class="text-center bg-black">
+                            <p class="m-0 py-1" style="color:white">Instagram Clone</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 py-2">
+                    <div class="project">
+                        <div>
+                            <a href="assets/portfolio-images/coaching.png" title="Click here to view">
+                                <img src="assets/portfolio-images/coaching.png" class="img-fluid" alt="Poject-image">
+                            </a>
+                        </div>
+                        <div class="text-center bg-black">
+                            <p class="m-0 py-1" style="color:white">Coaching Website</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 py-2">
+                    <div class="project">
+                        <div>
+                            <a href="assets/portfolio-images/environment.png" title="Click here to view">
+                                <img src="assets/portfolio-images/environment.png" class="img-fluid" alt="Poject-image">
+                            </a>
+                        </div>
+                        <div class="text-center bg-black">
+                            <p class="m-0 py-1" style="color:white">Environment Website</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 py-2">
+                    <div class="project">
+                        <div>
+                            <a href="assets/portfolio-images/signup-login.png" title="Click here to view">
+                                <img src="assets/portfolio-images/signup-login.png" class="img-fluid"
+                                    alt="Poject-image">
+                            </a>
+                        </div>
+                        <div class="text-center bg-black">
+                            <p class="m-0 py-1" style="color:white">Sign-up Login Page</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 py-2">
+                    <div class="project">
+                        <div>
+                            <a href="assets/portfolio-images/founder_website.png" title="Click here to view">
+                                <img src="assets/portfolio-images/founder_website.png" class="img-fluid"
+                                    alt="Poject-image">
+                            </a>
+                        </div>
+                        <div class="text-center bg-black">
+                            <p class="m-0 py-1" style="color:white">Founder Website</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 py-2">
+                    <div class="project">
+                        <div>
+                            <a href="assets/portfolio-images/owner_website.png" title="Click here to view">
+                                <img src="assets/portfolio-images/owner_website.png" class="img-fluid"
+                                    alt="Poject-image">
+                            </a>
+                        </div>
+                        <div class="text-center bg-black">
+                            <p class="m-0 py-1" style="color:white">Owner Website</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 py-2">
+                    <div class="project">
+                        <div>
+                            <a href="assets/portfolio-images/college-project.png" title="Click here to view">
+                                <img src="assets/portfolio-images/college-project.png" class="img-fluid"
+                                    alt="Poject-image">
+                            </a>
+                        </div>
+                        <div class="text-center bg-black">
+                            <p class="m-0 py-1" style="color:white">College Project</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 py-2">
+                    <div class="project">
+                        <div>
+                            <a href="assets/portfolio-images/college-survey.png" title="Click here to view">
+                                <img src="assets/portfolio-images/college-survey.png" class="img-fluid"
+                                    alt="Poject-image">
+                            </a>
+                        </div>
+                        <div class="text-center bg-black">
+                            <p class="m-0 py-1" style="color:white">College Survey</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 py-2">
+                    <div class="project">
+                        <div>
+                            <a href="assets/portfolio-images/loginpage.png" title="Click here to view">
+                                <img src="assets/portfolio-images/loginpage.png" class="img-fluid" alt="Poject-image">
+                            </a>
+                        </div>
+                        <div class="text-center bg-black">
+                            <p class="m-0 py-1" style="color:white">Login page</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Project section end  -->
+
+    <hr class="m-0">
+
+    <!-- contact section start  -->
+    <div class="container-fluid" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center mt-5 mb-0">Contact</p>
+                    <div class="text-center">
+                        <h1 class="text-capitalize">Get in touch with me</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <h4 class="py-3">Say Something :</h4>
+                    <form method="get">
+                        <div class="form-outline my-3">
+                            <input type="text" class="form-control ps-5 pe-5" placeholder="User" />
+                            <i class="fas fa-user ms-3"></i>
+                            <!-- <i class="icon fa-solid fa-x"></i> -->
+                        </div>
+                        <div class="form-outline my-3">
+                            <input type="email" class="form-control ps-5 pe-5" placeholder="Email" />
+                            <i class="fas fa-envelope ms-3"></i>
+                            <!-- <i class="icon fa-solid fa-x"></i> -->
+                        </div>
+                        <div class="form-outline my-3">
+                            <textarea class="form-control ps-5 pe-5" name="" id="" rows="5"
+                                placeholder="Message"></textarea>
+                            <i class="fa-solid fa-paragraph ms-3"></i>
+                        </div>
+                        <div class="form-outline my-3 text-center text-sm-start">
+                            <input class="px-3 " type="submit" value="Send Message">
+                            <input class="px-3 ms-2" type="reset" value="Reset">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-md-6 align-self-center me-5 me-sm-0">
+                    <div class="info ps-5 pt-3">
+                        <i class="fa-solid fa-location-dot pt-2"></i>
+                        <div class="ps-4">
+                            <h4>Location</h4>
+                            <p>At Usariya, Post Guraiya Chhindwara M.P.</p>
+                        </div>
+                    </div>
+                    <div class="info ps-5 pt-3">
+                        <i class="fa-solid fa-phone pt-2"></i>
+                        <div class="ps-4">
+                            <h4>Phone Number</h4>
+                            <p>8103934074</p>
+                        </div>
+                    </div>
+                    <div class="info ps-5 pt-3">
+                        <i class="fa-solid fa-envelope pt-2"></i>
+                        <div class="ps-4">
+                            <h4>Email</h4>
+                            <p>kameshraut2004@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 py-5">
+                    <div class="text-center social-media-icon">
+                        <div>
+                            <div class="py-1">
+                                <h5 class="pe-4">Follow me on social media :- </h5>
+                            </div>
+                            <div class="py-1">
+                                <a href="https://www.linkedin.com/in/kamesh-raut-0521b029a/" target="_blank"
+                                    title="Linkedin">
+                                    <i class="fa-brands fa-linkedin-in me-2"></i>
+                                </a>
+                                <a href="https://www.instagram.com/kamesh_raut92?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                                    target="_blank" title="Instagram">
+                                    <i class="fab fa-instagram me-2"></i>
+                                </a>
+                                <a href="https://twitter.com/kameshraut92" target="_blank" title="Twitter">
+                                    <i class="fab fa-twitter me-2"></i>
+                                </a>
+                                <a href="https://github.com/kameshraut" target="_blank" title="Github">
+                                    <i class="fab fa-github me-2"></i>
+                                </a>
+                                <a href="https://www.facebook.com/kamesh.raut.370" target="_blank" title="Facebook">
+                                    <i class="fab fa-facebook me-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact section end  -->
+
+    <hr class="m-0">
+
+    <!-- copyright section start  -->
+    <div class="container-fluid" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center py-4">
+                    <i class="fa-regular fa-copyright"></i>
+                    <span>
+                        2023 &bull; Kamesh Raut <img class="pb-1" src="assets/logo/verified.png" alt="verified">
+                        &bull; All rights reserved.
+                    </span>
+                    <!-- <a href="#" class="d-flex justify-content-center align-item-center">
+                            <i class="fa-solid fa-arrow-up"></i>
+                        </a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- copyright section end  -->
+
+    <!-- scroll animations script start  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 100,
+            duration: 1000,
+        });
+    </script>
+    <!-- scroll animations script end  -->
+
+
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
