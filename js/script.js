@@ -1,13 +1,13 @@
 /* preloader fuction start */
-// var preloader = document.getElementById("preloader");
-// var navbar = document.getElementById("navbar")
+var preloader = document.getElementById("preloader");
+var navbar = document.getElementById("navbar")
 
-// function Preloader() {
-//   // preloader.style.display="none"
-//   navbar.style.position="sticky"
-//   navbar.style.top="0"
-//   navbar.style.zIndex="22"
-// }
+function Preloader() {
+  preloader.style.display="none"
+  navbar.style.position="sticky"
+  navbar.style.top="0"
+  navbar.style.zIndex="22"
+}
 /* preloader fuction end */
 
 
