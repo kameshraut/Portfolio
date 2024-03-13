@@ -21,10 +21,8 @@
 }
 
 /* preloader styling start  */
-#preloader {
+/* #preloader {
     background-color: var(--secondary-color);
-    /* background: var(--secondary-color) url("../assets/bg-img/Flowing\ gradient.gif") center center; */
-    background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -34,10 +32,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 /* first loader */
-.loader {
+/* .loader {
     width: 60px;
     aspect-ratio: 1;
     display: flex;
@@ -62,10 +60,10 @@
     100% {
         transform: rotate(1turn)
     }
-}
+} */
 
 /* second loader  */
-.loader1 {
+/* .loader1 {
     width: fit-content;
     font-weight: bold;
     font-family: monospace;
@@ -83,8 +81,7 @@
     to {
         clip-path: inset(0 -1ch 0 0)
     }
-}
-
+} */
 /* preloader styling end  */
 
 /* navbar styling  */
