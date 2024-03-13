@@ -178,7 +178,8 @@
     width: 90%;
 }
 
-.hero-section a {
+.hero-section a,
+#live-link a {
     text-decoration: none;
     color: var(--primary-color);
     background-color: var(--light-color);
@@ -187,7 +188,8 @@
     margin-top: 10px;
 }
 
-.hero-section a:hover {
+.hero-section a:hover,
+#live-link a:hover {
     transition: 0.5s;
     box-shadow: 0 0 7px var(--light-color),
         0 0 10px var(--light-color),
@@ -317,7 +319,7 @@
 }
 
 .service-card {
-    border: 2px solid var(--primary-color);
+    border: 2px solid #fff;
     border-radius: 5px;
 }
 
@@ -332,6 +334,11 @@
 #project h1 {
     display: inline-block;
     border-bottom: 2px solid var(--dark-color);
+}
+
+#project h4{
+    border-bottom: 2px solid var(--light-color);
+    display: inline-block;
 }
 
 .project {
